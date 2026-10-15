@@ -1,0 +1,31 @@
+{
+  "name": "dolly",
+  "version": "0.1.0",
+  "description": "Terminal CLI that generates C, cross-compiles for Android aarch64, and deploys via adb USB",
+  "type": "module",
+  "bin": {
+    "dolly": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dolly": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "android",
+    "adb",
+    "ndk",
+    "c",
+    "cli"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
